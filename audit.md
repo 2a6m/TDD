@@ -1,33 +1,37 @@
-# Documentation :
+#Audit 28/11/2018
+This document contains the audit of the quality of the XXX project. The actors are Bourguignon Maxime, Jacobi Jordan, Simon Christophe and Vanneste Jean.
 
-## Technical issues
-version of java used ? jdk8
+## Documentation :
+Par rapport à la description du projet, il est plus facile d'utilisr une base dedonnées plutôt que des fichiers JSON locaux.
 
-libraries specified
+### Technical issues
+The version of java used is specified: OpenJDK8.
 
-## IDE
+The used libraries are specified and their version too.
+
+### IDE
 
 Doc only with Inttellij IDEA CE
 
-## Diagrams
+### Diagrams
 
-### User case diagram
+#### User case diagram
 cases must begin with verb
-Case: "Play game" is ambiguous ?
+Case: "Play game" is unclear ? Maybe a canva could be usefull.
 
-### Class diagram
+#### Class diagram
 
-# Quality criteria:
+## Quality criteria:
 
-## Conventions
+### Conventions
 
 * 2: ambiguous notation - space or not between brackets & curly braces
 
-## Tests
+### Tests
 
-Goals ? Reached
+Goals ? Reached ?
 
-## Jenkins modules/Metrics
+### Jenkins modules/Metrics
 
 * PMD: duplication check
 
@@ -36,8 +40,9 @@ Goals ? Reached
 * % Comment module ?
 >> No comment Main.java
 >> Not all classes are commented or JavaDoc'd
+>> Checkstyles ?
 
-# Git Log
-
-# Security
-Passwords are stored w/o encryption
+## Git Log
+?
+## Security
+Passwords are stored w/o encryption -> Hash !
