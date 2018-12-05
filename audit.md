@@ -26,6 +26,7 @@ Case: "Play game" is unclear ? Maybe a canva could be usefull.
 ### Conventions
 
 * 2: ambiguous notation - space or not between brackets & curly braces
+Duplication présente dans le riddle.java -> utilisation de variables tableaux et boucle
 
 ### Tests
 
