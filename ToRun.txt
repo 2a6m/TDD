@@ -1,3 +1,5 @@
-javac -classpath InterfaceMysteryGame/src/main/java/inter/:libraries/backend.jar InterfaceMysteryGame/src/main/java/inter/*.java
+javac -classpath InterfaceMysteryGame/src/main/java/inter/:InterfaceMysteryGame/src/main/java/inter/App.form:InterfaceMysteryGame/src/main/java/inter/GameChoice.fomr:InterfaceMysteryGame/src/main/java/inter/Login.form:InterfaceMysteryGame/src/main/java/inter/Riddle.form:libraries/backend.jar InterfaceMysteryGame/src/main/java/inter/*.java
 
-java -classpath InterfaceMysteryGame/src/main/java/:libraries/backend.jar inter.App
+java -classpath InterfaceMysteryGame/src/main/java/:InterfaceMysteryGame/src/main/java/inter/App.form:InterfaceMysteryGame/src/main/java/inter/GameChoice.fomr:InterfaceMysteryGame/src/main/java/inter/Login.form:InterfaceMysteryGame/src/main/java/inter/Riddle.form:libraries/backend.jar inter.App
+
+NOT WORKING YET!
