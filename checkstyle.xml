@@ -48,9 +48,6 @@
 
 -->
 
-<!-- Allow use of SuppressWarnings annotations -->
-<module name="SuppressWarnings"/>
-
 <module name="Checker">
 
     <!-- Locale to use to generate messages -->
@@ -71,6 +68,9 @@
     <module name="FileTabCharacter"/>
 
     <module name="TreeWalker">
+     
+        <!-- Allow use of SuppressWarnings annotations -->
+        <module name="SuppressWarnings"/>
 
         <property name="cacheFile" value="target/cachefile"/>
         <property name="tabWidth" value="4"/>
