@@ -49,6 +49,7 @@ public class App {
         });
     }
 
+    @SuppressWarnings("checkstyle:methodname")
     public static void main(String[] args) {
         JFrame frame = new JFrame("MysteryGame");
         frame.setContentPane(new App(frame).interfaceMain);

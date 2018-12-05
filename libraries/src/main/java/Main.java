@@ -1,10 +1,10 @@
 import java.util.*;
 import backend.*;
 
-@SuppressWarnings("checkstyle:methodname")
 public final class Main {
     private Main() {}
 
+    @SuppressWarnings("checkstyle:methodname")
     public static void main(String[] args) {
 
         SentenceMystery typeMystery = new SentenceMystery();
