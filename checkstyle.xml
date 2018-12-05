@@ -48,6 +48,9 @@
 
 -->
 
+<!-- Allow use of SuppressWarnings annotations -->
+<module name="SuppressWarnings"/>
+
 <module name="Checker">
 
     <!-- Locale to use to generate messages -->
