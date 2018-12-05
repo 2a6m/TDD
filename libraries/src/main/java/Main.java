@@ -2,7 +2,7 @@ import java.util.*;
 import backend.*;
 
 @SuppressWarnings("checkstyle:methodname")
-public class Main {
+public final class Main {
     private Main() {}
 
     public static void main(String[] args) {
