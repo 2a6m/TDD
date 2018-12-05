@@ -2,7 +2,9 @@ import java.util.*;
 import backend.*;
 
 @SuppressWarnings("checkstyle:methodname")
-private class Main {
+public class Main {
+    private Main() {}
+
     public static void main(String[] args) {
 
         SentenceMystery typeMystery = new SentenceMystery();
