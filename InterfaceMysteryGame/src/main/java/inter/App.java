@@ -41,6 +41,9 @@ public class App {
                         frame.pack();
                         frame.setVisible(true);
                         break;
+                    default:
+                        System.out.println("Invalid difficulty chosen.");
+                        break;
                 }
             }
         });

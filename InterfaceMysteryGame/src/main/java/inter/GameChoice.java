@@ -25,6 +25,9 @@ public class GameChoice {
                         frame.pack();
                         frame.setVisible(true);
                         break;
+                    default:
+                        System.out.println("Invalid game mode chosen.");
+                        break;
                 }
             }
         });
