@@ -67,10 +67,16 @@
 
     <module name="FileTabCharacter"/>
 
+    <!-- Filter out Checkstyle warnings that have been suppressed with the @SuppressWarnings annotation -->
+    <module name="SuppressWarningsFilter" />
+ 
     <module name="TreeWalker">
      
         <!-- Allow use of SuppressWarnings annotations -->
         <module name="SuppressWarnings"/>
+     
+        <!-- Make the @SuppressWarnings annotations available to Checkstyle -->
+        <module name="SuppressWarningsHolder" />
 
         <property name="cacheFile" value="target/cachefile"/>
         <property name="tabWidth" value="4"/>
