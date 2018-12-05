@@ -1,6 +1,7 @@
 import java.util.*;
 import backend.*;
 
+@SuppressWarnings("checkstyle:methodnamecheck")
 public class Main {
     public static void main(String[] args) {
 
