@@ -1,0 +1,3 @@
+javac -classpath InterfaceMysteryGame/src/main/java/inter/:libraries/backend.jar InterfaceMysteryGame/src/main/java/inter/*.java
+
+java -classpath InterfaceMysteryGame/src/main/java/:libraries/backend.jar inter.App
