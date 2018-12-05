@@ -29,7 +29,7 @@ public class RemoveLetterTest {
         game.GetBonusList().get(0).ApplyBonus(game);
         ArrayList<Character> displayLetters = game.GetLetterDisplay();
 
-        assertTrue("The displayLetter list does not egale to 12", displayLetters.size() == 12);
+        assertTrue("The displayLetter list does not equals to 12", displayLetters.size() == 12);
         assertTrue("displayLetter does not a instance of ArrayList<Character>", displayLetters instanceof List);
     }
 }
