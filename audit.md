@@ -43,6 +43,8 @@ Duplication présente dans le riddle.java -> utilisation de variables tableaux e
 * Must have a lot of test for backend, because file .jar (~)
 Goals ? Reached ?
 To add tests !
+Il est important de travailler en cycle de TDD pour implémenter les méthodes.
+Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas été respecté.
 
 ### Jenkins modules/Metrics
 
