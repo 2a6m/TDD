@@ -5,8 +5,16 @@ import java.util.Random;
 
 public class RemoveLetter extends TypeBonus {
 
+    /**
+    * Constructor.
+    */
     public RemoveLetter() { }
-
+    
+    /**
+    * Apply a Bonus.
+    *
+    * @param game ?
+    */
     @Override
     public void ApplyBonus(Game game) {
         if (Utils.CheckCoins(game.GetPlayer(), game.GetDifficulty())) {
