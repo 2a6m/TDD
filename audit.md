@@ -30,6 +30,10 @@ Une base de données relationnelle pourrait être une bonne idée pour une évol
 Très bon diagramme où transparaissent bien les designs patterns utilisés.
 Dans une optique de facilité en cas de changement d'équipe, une homogénéité de langage pourraît faciliter le transfert (commentaires et annotations en français alors que le code est en anglais).
 
+## Architecture
+The choice to dissociate the project between a front-end and a back-end seems coherent.
+It is a multitier architecture. However, the structure of the project doesn't satisfy the maven requirement at the moment. This require some changes in the hierachy tree of the project (example here: https://openclassrooms.com/fr/courses/4503526-organisez-et-packagez-une-application-java-avec-apache-maven/4609181-decoupez-votre-projet-en-couches-applicatives)
+
 ## Quality criteria:
 
 ### Conventions
