@@ -5,11 +5,29 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+* This class represents the login.
+*/
 public class Login {
+    /**
+    * @param loginPanel panel to login.
+    */
     private JPanel loginPanel;
+    /**
+    * @param username username.
+    */
     private JTextField username;
+    /**
+    * @param password password.
+    */
     private JPasswordField password;
+    /**
+    * @param login login.
+    */
     private JButton login;
+    /**
+    * @param notLogin notLogin.
+    */
     private JButton notLogin;
 
     public Login(JFrame frame, Difficulty difficulty,TypeMystery typeMystery) {
