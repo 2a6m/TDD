@@ -3,10 +3,13 @@ package backend;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+* Class to implement the bonus to remove a letter.
+*/
 public class RemoveLetter extends TypeBonus {
 
     /**
-    * Constructor.
+    * RemoveLetter constructor.
     */
     public RemoveLetter() { }
     
