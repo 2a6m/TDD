@@ -57,6 +57,9 @@
     <!-- See http://checkstyle.sf.net/config_javadoc.html#PackageHtml -->
     <!-- <module name="PackageHtml"/> -->
 
+    <!-- Checks for the JavaDoc -->
+    <module name="JavadocPackage"/>
+
     <!-- Checks whether files end with a new line.                        -->
     <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
     <module name="NewlineAtEndOfFile"/>
@@ -69,12 +72,12 @@
 
     <!-- Filter out Checkstyle warnings that have been suppressed with the @SuppressWarnings annotation -->
     <module name="SuppressWarningsFilter" />
- 
+
     <module name="TreeWalker">
-     
+
         <!-- Allow use of SuppressWarnings annotations -->
         <module name="SuppressWarnings"/>
-     
+
         <!-- Make the @SuppressWarnings annotations available to Checkstyle -->
         <module name="SuppressWarningsHolder" />
 
@@ -83,10 +86,10 @@
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <!--<module name="JavadocMethod"/>
+        <module name="JavadocMethod"/>
         <module name="JavadocType"/>
         <module name="JavadocVariable"/>
-        <module name="JavadocStyle"/>-->
+        <module name="JavadocStyle"/>
 
 
         <!-- Checks for Naming Conventions.                  -->

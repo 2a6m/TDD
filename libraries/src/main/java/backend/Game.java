@@ -21,71 +21,71 @@ public class Game {
         this.bonusList.add(new RemoveLetter());
     }
 
-    /* To play an other gameMystery
+    /** To play an other gameMystery.
      *
      * @return void
      */
     public void NextMystery() { typeMystery.NextMystery(this); }
 
-    /* Modifies the letters to display through the interface
+    /** Modifies the letters to display through the interface.
      *
      * @param  letterDisplay   the new letters to display
      * @return void
      */
     public void SetLetterDisplay(ArrayList<Character> letterDisplay) { this.letterDisplay = letterDisplay; }
 
-    /* Get the letters to display through the interface
+    /** Get the letters to display through the interface.
      *
      * @return an ArrayList with the letters to display
      */
     public ArrayList<Character> GetLetterDisplay() { return this.letterDisplay; }
 
-    /* Modifies the letters to display through the interface
+    /** Modifies the letters to display through the interface.
      *
      * @param  letterDisplay   the new letters to display
      * @return void
      */
     public void SetTypeMystery(TypeMystery typeMystery) { this.typeMystery = typeMystery; }
 
-    /* Modifies the Difficulty of the game
+    /** Modifies the Difficulty of the game.
      *
      * @param  difficulty      the new difficulty that the user has chosen
      * @return void
      */
     public void SetDifficulty(Difficulty difficulty) { this.difficulty = difficulty; }
 
-    /* Gives the Difficulty of the game
+    /** Gives the Difficulty of the game.
      *
      * @return an object Difficulty representing the difficulty of the current game
      */
     public Difficulty GetDifficulty() { return this.difficulty; }
 
-    /* Changes the mystery to display through the interface
+    /** Changes the mystery to display through the interface.
      *
      * @param  mystery      the new mystery to display (a map where the key is the response of the mystery and the value is the mystery)
      * @return void
      */
     public void SetMystery(Pair<String, List<String>> mystery) { this.mystery = mystery; }
 
-    /* Gives the current mystery of the game
+    /** Gives the current mystery of the game.
      *
      * @return void
      */
     public Pair<String, List<String>> GetMystery() { return mystery; }
 
-    /* Gives the available bonuses
+    /** Gives the available bonuses.
      *
      * @return          a ArrayList of TypeBonus representing the available bonuses
      */
     public ArrayList<TypeBonus> GetBonusList() { return bonusList; }
 
-    /* Gives the current player who is playing
+    /** Gives the current player who is playing.
      *
      * @return a Player object representing the current player
      */
     public Player GetPlayer() { return player; }
 
-    /* Connect and initialize a player
+    /** Connect and initialize a player.
      *
      * @param  pseudo   the pseudo of the player
      * @param  password the password of the player
@@ -114,7 +114,7 @@ public class Game {
     }
 
 
-    /* Check the pseudo and the password of a player
+    /** Check the pseudo and the password of a player.
      *
      * @param  pseudo   the pseudo of the player
      * @param  password the password of the player
@@ -142,7 +142,7 @@ public class Game {
     }
 
 
-    /* Update the json which represent the player's data
+    /** Update the json which represent the player's data.
      *
      * @return void
      */
