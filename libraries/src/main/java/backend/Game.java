@@ -9,7 +9,7 @@ import java.util.List;
 
 /* Class Game.
  *
- * class representing the carcteristics of the game
+ * class representing the carcteristics of the game.
  */
 public class Game {
     /** Player informations.
@@ -48,6 +48,10 @@ public class Game {
      */
     private ArrayList<TypeBonus> bonusList = new ArrayList<TypeBonus>();
 
+    /** Constructor.
+     *
+     * @param difficulty set the doffoculty of the game.
+     */
     public Game(Difficulty difficulty) { //Ajouter Player
         this.difficulty = difficulty;
 
@@ -55,15 +59,12 @@ public class Game {
     }
 
     /** To play an other gameMystery.
-     *
-     * @return void.
      */
     public void NextMystery() { typeMystery.NextMystery(this); }
 
     /** Modifies the letters to display through the interface.
      *
      * @param  letterDisplay   the new letters to display.
-     * @return void.
      */
     public void SetLetterDisplay(ArrayList<Character> letterDisplay) { this.letterDisplay = letterDisplay; }
 
@@ -73,17 +74,15 @@ public class Game {
      */
     public ArrayList<Character> GetLetterDisplay() { return this.letterDisplay; }
 
-    /** Modifies the letters to display through the interface.
+    /** Modifies the type of mystery.
      *
-     * @param  letterDisplay   the new letters to display.
-     * @return void.
+     * @param  typeMystery   the new type of mystery.
      */
     public void SetTypeMystery(TypeMystery typeMystery) { this.typeMystery = typeMystery; }
 
     /** Modifies the Difficulty of the game.
      *
      * @param  difficulty      the new difficulty that the user has chosen.
-     * @return void.
      */
     public void SetDifficulty(Difficulty difficulty) { this.difficulty = difficulty; }
 
@@ -96,13 +95,10 @@ public class Game {
     /** Changes the mystery to display through the interface.
      *
      * @param  mystery      the new mystery to display (a map where the key is the response of the mystery and the value is the mystery).
-     * @return void.
      */
     public void SetMystery(Pair<String, List<String>> mystery) { this.mystery = mystery; }
 
     /** Gives the current mystery of the game.
-     *
-     * @return void.
      */
     public Pair<String, List<String>> GetMystery() { return mystery; }
 
@@ -122,7 +118,6 @@ public class Game {
      *
      * @param  pseudo   the pseudo of the player.
      * @param  password the password of the player.
-     * @return void.
      */
     public void Login(String pseudo, String password) {
         JSONObject playerData = CheckLogin(pseudo,password);
@@ -176,8 +171,6 @@ public class Game {
 
 
     /** Update the json which represent the player's data.
-     *
-     * @return void.
      */
     public void Save() {
         try {
