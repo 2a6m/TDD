@@ -1,6 +1,10 @@
 package backend;
 
 import java.util.*;
+/** Class Difficulty.
+ *
+ * Class to represent the difficulty of the game.
+ */
 public class Difficulty {
 
     /** name of te difficulty.
@@ -14,7 +18,7 @@ public class Difficulty {
      * @param levelcoin it represent the level of earning coin.
      */
     private int levelCoin;
-    
+
     /** map listing the possibilities.
      *
      * @param coinConfiguration it link the name and the levelcoin.
@@ -27,6 +31,10 @@ public class Difficulty {
         }
     };
 
+    /** Constructor.
+     *
+     * @param name      the name ofthe difficulty.
+     */
     public Difficulty(String name) {
         this.name = name;
         this.levelCoin = coinConfiguration.get(name);
@@ -63,7 +71,7 @@ public class Difficulty {
 
     }
 
-    /** Adds coins of a player
+    /** Adds coins of a player.
      *
      * @param  player   the player who won his coins.
      */
