@@ -16,6 +16,8 @@ Une base de données relationnelle pourrait être une bonne idée pour une évol
 ### IDE
 
 * Doc only with Inttellij IDEA CE (-)
+%Il aurait été utile de réaliser une doc pour le compiler autrement.%
+
 
 ### Diagrams
 * Utilisation de design pattern justifiée et argumentée donc très utile pour reprendre le code de l'équipe précédente. (+)
@@ -25,7 +27,8 @@ Une base de données relationnelle pourrait être une bonne idée pour une évol
 * Case: "Play game" is unclear ? Maybe a canva could be usefull. (-)
 
 #### Class diagram
-To do !
+Très bon diagramme où transparaissent bien les designs patterns utilisés.
+Dans une optique de facilité en cas de changement d'équipe, une homogénéité de langage pourraît faciliter le transfert (commentaires et annotations en français alors que le code est en anglais).
 
 ## Quality criteria:
 
