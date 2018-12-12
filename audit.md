@@ -77,7 +77,10 @@ To add tests !
 * chekstyle -> javadoc était décommenté (?)
 * Interface pas commenté et pas testé (?)
 * Il y a de la javadoc qui n'est pas aux normes, mais ils n'en parlent pas (?)
+* Erreurs de commentaires ?? (Difficulty.java)
 
 ## Done
 
 * Correction du checkstyle -> 0 erreur
+* Ajouter à jenkins sloccount -> ajouter javadoc au checkstyle.xml (il y avait déjà un semblant de javadoc dans les fichiers du backend)
+* Correction Javadoc
