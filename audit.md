@@ -73,8 +73,10 @@ To add tests !
 * Avec 2 tests -> 62% couverture de code :O -> jenkind dis 30%
 * test intelligents ??
 * Le projet github, les branches n'étaient pas merge -> il y a perte de documentation et de travail fait (-)
-* Commit de plusieurs lignes ?? / message dans gitlog reviennent plusieurs fois (?)
+* Commit de plusieurs lignes ?? / message dans gitlog reviennent plusieurs fois (?) -> pull-request
 * chekstyle -> javadoc était décommenté (?)
+* Interface pas commenté et pas testé (?)
+* Il y a de la javadoc qui n'est pas aux normes, mais ils n'en parlent pas (?)
 
 ## Done
 
