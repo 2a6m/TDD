@@ -5,11 +5,29 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import backend.*;
 
+/**
+* This class represents the game choice.
+*/
 public class GameChoice {
+    /**
+    * @param gameChoice choice of the game.
+    */
     private JPanel gameChoice;
+    /**
+    * @param title title.
+    */
     private JLabel title;
+    /**
+    * @param intro introduction.
+    */
     private JLabel intro;
+    /**
+    * @param gameMode mode of the game.
+    */
     private JComboBox gameMode;
+    /**
+    * @param playButton button to play.
+    */
     private JButton playButton;
 
     public GameChoice(JFrame frame, Difficulty difficulty) {

@@ -7,42 +7,149 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import backend.*;
 
-
+/**
+* This class represents the riddle.
+*/
 public class Riddle {
+    /**
+    * @param riddle riddle.
+    */
     private JPanel riddle;
+    /**
+    * @param enigma enigma.
+    */
     private JLabel enigma;
+    /**
+    * @param wordBox wordBox.
+    */
     private JLabel wordBox;
+    /**
+    * @param letter1 first letter.
+    */
     private JButton letter1;
+    /**
+    * @param letter2 second letter.
+    */
     private JButton letter2;
+    /**
+    * @param letter3 third letter.
+    */
     private JButton letter3;
+    /**
+    * @param letter4 fourth letter.
+    */
     private JButton letter4;
+    /**
+    * @param letter5 fifth letter.
+    */
     private JButton letter5;
+    /**
+    * @param letter6 sixth letter.
+    */
     private JButton letter6;
+    /**
+    * @param letter7 seventh letter.
+    */
     private JButton letter7;
+    /**
+    * @param letter8 eighth letter.
+    */
     private JButton letter8;
+    /**
+    * @param letter9 ninth letter.
+    */
     private JButton letter9;
+    /**
+    * @param letter10 tenth letter.
+    */
     private JButton letter10;
+    /**
+    * @param letter11 eleven letter.
+    */
     private JButton letter11;
+    /**
+    * @param letter12 twelve letter.
+    */
     private JButton letter12;
+    /**
+    * @param clear clear.
+    */
     private JButton clear;
+    /**
+    * @param removeBonus removeBonus.
+    */
     private JButton removeBonus;
+    /**
+    * @param dislpayBonus displayBonus.
+    */
     private JButton displayBonus;
+    /**
+    * @param skipBonus skipBonus.
+    */
     private JButton skipBonus;
+    /**
+    * @param lettersNumber lettersNumber.
+    */
     private JLabel lettersNumber;
+    /**
+    * @param coins coins.
+    */
     private JLabel coins;
+    /**
+    * @param space space.
+    */
     private JLabel space;
+    /**
+    * @param frame frame.
+    */
     private JFrame frame;
+    /**
+    * @param difficulty difficulty.
+    */
     private Difficulty difficulty;
+    /**
+    * @param typeMystery typeMystery.
+    */
     private TypeMystery typeMystery;
+    /**
+    * @param word word.
+    */
     private String word;
+    /**
+    * @param response response.
+    */
     private String response;
+    /**
+    * @param user user.
+    */
     private String user;
+    /**
+    * @param password password.
+    */
     private String password;
+    /**
+    * @param disableButtons disableButtons.
+    */
     private ArrayList<JButton> disableButtons = new ArrayList<JButton>();
+    /**
+    * @param bonusUsed used bonus.
+    */
     private ArrayList<JButton> bonusUsed = new ArrayList<JButton>();
+    /**
+    * @param listButtons buttons.
+    */
     private ArrayList<JButton> listButtons = new ArrayList<JButton>();
+    /**
+    * @param listSpace space(s).
+    */
     private ArrayList<JButton> listSpace = new ArrayList<JButton>();
+    /**
+    * @param game game.
+    */
     private Game game;
+    /**
+    * @param player player.
+    */
     private Player player;
 
     public void SetLetters(ArrayList<Character> letters) {

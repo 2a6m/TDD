@@ -5,12 +5,29 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import backend.*;
 
+/**
+* This class represents the app.
+*/
 public class App {
-
+    /**
+    * @param interfaceMain interface for the main part.
+    */
     private JPanel interfaceMain;
+    /**
+    * @param title title.
+    */
     private JLabel title;
+    /**
+    * @param intro introduction.
+    */
     private JLabel intro;
+    /**
+    * @param difficulty difficulty.
+    */
     private JComboBox difficulty;
+    /**
+    * @param validateButton button to validate.
+    */
     private JButton validateButton;
 
     public App(JFrame frame) {
