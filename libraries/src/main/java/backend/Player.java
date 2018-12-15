@@ -1,6 +1,3 @@
-/*
-* Logical part of the project
-*/
 package backend;
 
 /**
