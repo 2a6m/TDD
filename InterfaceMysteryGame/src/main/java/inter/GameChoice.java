@@ -30,6 +30,12 @@ public class GameChoice {
     */
     private JButton playButton;
 
+    /**
+     * Constructor.
+     *
+     * @param frame window.
+     * @param diffculty difficulty.
+     */
     public GameChoice(JFrame frame, Difficulty difficulty) {
         playButton.addActionListener(new ActionListener() {
             @Override
@@ -51,6 +57,11 @@ public class GameChoice {
         });
     }
 
+    /**
+     * getter.
+     *
+     * @return user's game choice
+     */
     public JPanel GetGameChoice() {
         return gameChoice;
     }

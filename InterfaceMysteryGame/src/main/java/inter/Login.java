@@ -30,6 +30,13 @@ public class Login {
     */
     private JButton notLogin;
 
+    /**
+     * Constructor.
+     *
+     * @param frame window.
+     * @param diffivulty difficulty of the game.
+     * @param typeMystery type of mystery.
+     */
     public Login(JFrame frame, Difficulty difficulty,TypeMystery typeMystery) {
 
         login.addActionListener(new ActionListener() {
@@ -48,6 +55,12 @@ public class Login {
             }
         });
     }
+
+    /**
+     * getter.
+     *
+     * @return panel to login
+     */
     public JPanel GetLogin() { return loginPanel; }
 
 }

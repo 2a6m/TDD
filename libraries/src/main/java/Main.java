@@ -1,9 +1,19 @@
 import java.util.*;
 import backend.*;
 
+/**
+ * Class main.
+ */
 public final class Main {
+    /**
+     * Constructor.
+     */
     private Main() {}
 
+    /**
+     * method main.
+     * @param args argument at launch.
+     */
     @SuppressWarnings("checkstyle:methodname")
     public static void main(String[] args) {
 

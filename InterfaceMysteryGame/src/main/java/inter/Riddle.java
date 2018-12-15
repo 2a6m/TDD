@@ -152,6 +152,10 @@ public class Riddle {
     */
     private Player player;
 
+     /**
+      * method to link letters and buttons.
+      * @param letters list of letters.
+      */
     public void SetLetters(ArrayList<Character> letters) {
         letter1.setText(Character.toString(letters.get(0)));
         letter2.setText(Character.toString(letters.get(1)));
@@ -181,6 +185,15 @@ public class Riddle {
 
     }
 
+    /**
+     * Constructor.
+     *
+     * @param frame window.
+     * @param difficulty difficulty of the riddlle.
+     * @param typeMystery type of riddle.
+     * @param user data about the user.
+     * @param password user's password.
+     */
     public Riddle(JFrame frame, Difficulty difficulty, TypeMystery typeMystery, String user, String password) {
 
         this.frame = frame;
@@ -301,6 +314,9 @@ public class Riddle {
         });
     }
 
+    /**
+     * method to reset party.
+     */
     public void Reset() {
         wordBox.setText("");
 
@@ -315,6 +331,9 @@ public class Riddle {
         });
     }
 
+    /**
+     * method to reset space.
+     */
     public void ResetSpace() {
         listButtons.forEach(new Consumer<JButton>() {
             @Override
@@ -325,6 +344,9 @@ public class Riddle {
         });
     }
 
+    /**
+     * method to reset bonus.
+     */
     public void ResetBonus() {
         bonusUsed.forEach(new Consumer<JButton>() {
             @Override
@@ -335,6 +357,9 @@ public class Riddle {
         });
     }
 
+    /**
+     * method to remove space.
+     */
     public void RemoveSpace() {
         for (JButton button : listButtons) {
             if (button.getText().equals(" ")){
@@ -345,6 +370,9 @@ public class Riddle {
         }
     }
 
+    /**
+     * method to check.
+     */
     public void Check() {
         String word = wordBox.getText();
         if (response.length() == wordBox.getText().length()) {
@@ -359,6 +387,11 @@ public class Riddle {
         }
     }
 
+    /**
+     * method to update the wordbox.
+     *
+     * @param button the button.
+     */
     public void UpdateWordBox(JButton button) {
         word = wordBox.getText();
         word = word + button.getText();
@@ -367,7 +400,9 @@ public class Riddle {
         disableButtons.add(button);
     }
 
-
+    /**
+     * method to initialize the game.
+     */
     public void Initialize() {
         this.game = new Game(difficulty, typeMystery);
         game.SetTypeMystery(typeMystery);
@@ -377,6 +412,10 @@ public class Riddle {
         Next();
     }
 
+    /**
+     * method next.
+     * go to next mystery/
+     */
     public void Next() {
 
         game.NextMystery();

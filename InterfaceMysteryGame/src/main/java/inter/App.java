@@ -29,7 +29,11 @@ public class App {
     * @param validateButton button to validate.
     */
     private JButton validateButton;
-
+    /**
+     * Constructor.
+     *
+     * @param frame window of the game.
+     */
     public App(JFrame frame) {
         validateButton.addActionListener(new ActionListener() {
             @Override
@@ -66,6 +70,11 @@ public class App {
         });
     }
 
+    /**
+     * method main.
+     *
+     * @param args arguments received at the launch
+     */
     @SuppressWarnings("checkstyle:methodname")
     public static void main(String[] args) {
         JFrame frame = new JFrame("MysteryGame");
