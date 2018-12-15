@@ -3,6 +3,9 @@ package backend;
 import java.util.*;
 import javafx.util.*;
 
+/** Class TypeMystery.
+ *
+ */
 public abstract class TypeMystery {
 
     /**
