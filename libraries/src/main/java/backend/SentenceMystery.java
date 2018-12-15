@@ -5,8 +5,14 @@ import org.json.JSONObject;
 import java.util.*;
 import javafx.util.*;
 
+/** Class SentenceMystery.
+ *
+ */
 public class SentenceMystery extends TypeMystery {
 
+    /** Method Sentence Mystery.
+     *
+     */
     public SentenceMystery() { }
 
     @Override

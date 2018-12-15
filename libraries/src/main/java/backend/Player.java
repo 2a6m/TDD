@@ -1,4 +1,4 @@
-/**
+/*
 * Logical part of the project
 */
 package backend;
@@ -12,7 +12,7 @@ public class Player {
     * Pseudo of the player.
     */
     private String pseudo;
-    
+
     /**
     * Amount of coins of the player.
     */
@@ -21,7 +21,7 @@ public class Player {
     /**
     * Player constructor.
     *
-    * @param pseudo
+    * @param pseudo peudo of the player.
     */
     public Player(String pseudo) {
         this.pseudo = pseudo;

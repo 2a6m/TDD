@@ -7,7 +7,7 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Class Game.
+/** Class Game.
  *
  * class representing the carcteristics of the game.
  */
@@ -99,12 +99,14 @@ public class Game {
     public void SetMystery(Pair<String, List<String>> mystery) { this.mystery = mystery; }
 
     /** Gives the current mystery of the game.
+     *
+     * @return      a Pair  representing the mystery
      */
     public Pair<String, List<String>> GetMystery() { return mystery; }
 
     /** Gives the available bonuses.
      *
-     * @return          a ArrayList of TypeBonus representing the available bonuses.
+     * @return       a ArrayList of TypeBonus representing the available bonuses.
      */
     public ArrayList<TypeBonus> GetBonusList() { return bonusList; }
 
@@ -188,6 +190,4 @@ public class Game {
         }
 
     }
-
-
 }

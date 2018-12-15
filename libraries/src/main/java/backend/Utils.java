@@ -6,16 +6,25 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
 
+/** Class utils.
+ *
+ */
 public class Utils {
+    /** Constructor.
+     *
+     */
     protected Utils() {}
 
+    /**
+     * @param url path of the user
+     */
     public static final String url = System.getProperty("user.dir");
 
     /**
      * This method avoids duplicating the database opening code for subclasses.
      *
-     * @param  path  the path to the database
-     * @return       a JSONObject representing the database
+     * @param  path  the path to the database.
+     * @return       a JSONObject representing the database.
      */
     public static JSONObject ReadDatabase(String path) {
         try {
@@ -31,9 +40,9 @@ public class Utils {
     /**
      * Check if the player has enough coins for using bonus.
      *
-     * @param  player      the game's player
-     * @param  difficulty  the game's difficulty
-     * @return boolean     true: if the player can use; false: if the user can not use
+     * @param  player      the game's player.
+     * @param  difficulty  the game's difficulty.
+     * @return boolean     true: if the player can use; false: if the user can not use.
      */
     public static boolean CheckCoins(Player player, Difficulty difficulty) {
         int playerCoins = player.GetCoins();
@@ -45,8 +54,8 @@ public class Utils {
     /**
      * Mix an array (Fisher-Yates algorithm).
      *
-     * @param  array                the initial array of char
-     * @return ArrayList<Character> the array mixed
+     * @param  array                the initial array of char.
+     * @return ArrayList<Character> the array mixed.
      */
     public static ArrayList<Character> MixArray(ArrayList<Character> array) {
         Random random = new Random();

@@ -1,24 +1,31 @@
 package backend;
 
+/** Class TypeBonus.
+ *
+ * Define the bonus type.
+ */
 public abstract class TypeBonus {
+    /**
+     * @param user is a boolean.
+     */
     protected boolean used = true;
 
     /**
-     * Apply the chosen bonus to the game status
+     * Apply the chosen bonus to the game status.
      *
-     * @param  game  represents information related to the game
+     * @param  game  represents information related to the game.
      */
     public abstract void ApplyBonus(Game game);
 
     /**
-     * Returns if the bonus is used or not
+     * Returns if the bonus is used or not.
      *
-     * @return  true: the bonus does not used, false: the bonus is used
+     * @return  true: the bonus does not used, false: the bonus is used.
      */
     public boolean IsAvailable() { return used; }
 
     /**
-     * When we choose a new mystery, we reset the usage value
+     * When we choose a new mystery, we reset the usage value.
      *
      */
     public void ResetUsed() { used = true; }
