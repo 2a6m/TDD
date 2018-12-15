@@ -1,3 +1,6 @@
+/**
+ * package for the interface
+ */
 package inter;
 
 import backend.*;
@@ -34,7 +37,7 @@ public class Login {
      * Constructor.
      *
      * @param frame window.
-     * @param diffivulty difficulty of the game.
+     * @param difficulty difficulty of the game.
      * @param typeMystery type of mystery.
      */
     public Login(JFrame frame, Difficulty difficulty,TypeMystery typeMystery) {

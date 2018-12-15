@@ -34,7 +34,7 @@ public class GameChoice {
      * Constructor.
      *
      * @param frame window.
-     * @param diffculty difficulty.
+     * @param difficulty difficulty.
      */
     public GameChoice(JFrame frame, Difficulty difficulty) {
         playButton.addActionListener(new ActionListener() {

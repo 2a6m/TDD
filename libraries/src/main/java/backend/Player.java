@@ -1,3 +1,6 @@
+/**
+ * Package for the backend of th eapplication.
+ */
 package backend;
 
 /**
