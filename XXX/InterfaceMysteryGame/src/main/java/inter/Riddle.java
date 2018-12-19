@@ -369,7 +369,7 @@ public class Riddle {
 
 
     public void Initialize() {
-        this.game = new Game(difficulty, typeMystery);
+        this.game = new Game(difficulty);
         game.SetTypeMystery(typeMystery);
         if (this.user != "") {
             game.Login(this.user, this.password);
