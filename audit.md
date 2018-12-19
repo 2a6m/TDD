@@ -65,12 +65,9 @@ Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas 
 
 ### Comments
 
-No module to measure the comments => sloccount
-Goal : 30% => only ~15% reached
-
-### Duplication
-
-A lot of duplication in the interface part due to the automatic generation of forms
+* Javadoc but no checkstyle for the javadoc
+* No module to measure the comments => sloccount
+* Goal : 30% => only ~15% reached
 
 ## Git Log
 
@@ -85,9 +82,9 @@ commits with multiple lines/duplication
 
 ## Taches à faire
 
-* faire fonctionner PMD
-* Correct Javadoc
-* Creer les 2 autres modes de jeux
+ - [ ] faire fonctionner PMD
+ - [x] Correct Javadoc
+ - [ ] Creer les 2 autres modes de jeux
 
 ## Reflexion
 
@@ -100,6 +97,7 @@ commits with multiple lines/duplication
 * Interface pas commenté et pas testé (?)
 * Il y a de la javadoc qui n'est pas aux normes, mais ils n'en parlent pas (?)
 * Erreurs de commentaires ?? (Difficulty.java)
+* Pas d'explication sur le fonctionnement du backend
 
 ## Done
 
