@@ -76,7 +76,7 @@ Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas 
 ## Reflexion
 
 * une seule interface (GUI) qui accepte différents types de jeux (isl sont très similaires)
-* Avec 2 tests -> 62% couverture de code :O -> jenkind dis 30%
+* Avec 2 tests -> 62% couverture de code :O -> jenkins dis 30%
 * test intelligents ??
 * Le projet github, les branches n'étaient pas merge -> il y a perte de documentation et de travail fait (-)
 * Commit de plusieurs lignes ?? / message dans gitlog reviennent plusieurs fois (?) -> pull-request
