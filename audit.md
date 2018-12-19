@@ -31,8 +31,10 @@ Très bon diagramme où transparaissent bien les designs patterns utilisés.
 Dans une optique de facilité en cas de changement d'équipe, une homogénéité de langage pourraît faciliter le transfert (commentaires et annotations en français alors que le code est en anglais).
 
 ## Architecture
+
 The choice to dissociate the project between a front-end and a back-end seems coherent.
 It is a multitier architecture. However, the structure of the project doesn't satisfy the maven requirement at the moment. This require some changes in the hierachy tree of the project (example here: https://openclassrooms.com/fr/courses/4503526-organisez-et-packagez-une-application-java-avec-apache-maven/4609181-decoupez-votre-projet-en-couches-applicatives)
+/target in .gitignore => not present in maven
 
 ## Quality criteria:
 
@@ -45,6 +47,7 @@ Duplication présente dans le riddle.java -> utilisation de variables tableaux e
 ### Tests
 
 * Must have a lot of test for backend, because file .jar (~)
+Few tests (2)
 Goals ? Reached ?
 To add tests !
 Il est important de travailler en cycle de TDD pour implémenter les méthodes.
@@ -53,15 +56,24 @@ Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas 
 ### Jenkins modules/Metrics
 
 * PMD: duplication check (only on the backend part) (-)
-* Cobertura: Code coverage (+)
+* Cobertura: Code coverage (+) Specifies weird coverage
 * % Comment module ? (-)
     * No comment Main.java
     * Not all classes are commented or JavaDoc'd
     * No check for the JavaDoc
     * Checkstyles ?
 
+### Comments
+
+No module to measure the comments => sloccount
+Goal : 30% => only ~15% reached
+
 ## Git Log
-?
+
+relevant commits
+commits with multiple lines/duplication
+=> probably due to merges
+
 ## Security
 
 * Passwords are stored w/o encryption -> Hash ! (-)
@@ -76,7 +88,7 @@ Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas 
 ## Reflexion
 
 * une seule interface (GUI) qui accepte différents types de jeux (isl sont très similaires)
-* Avec 2 tests -> 62% couverture de code :O -> jenkins dis 30%
+* Avec 2 tests -> 62% couverture de code :O -> jenkind dis 30%
 * test intelligents ??
 * Le projet github, les branches n'étaient pas merge -> il y a perte de documentation et de travail fait (-)
 * Commit de plusieurs lignes ?? / message dans gitlog reviennent plusieurs fois (?) -> pull-request
@@ -88,5 +100,7 @@ Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas 
 ## Done
 
 * Correction du checkstyle -> 0 erreur
-* Ajouter à jenkins sloccount -> ajouter javadoc au checkstyle.xml (il y avait déjà un semblant de javadoc dans les fichiers du backend)
+* Ajouter à jenkins sloccount
+* Ajouter javadoc au checkstyle.xml (il y avait déjà un semblant de javadoc dans les fichiers du backend)
 * Correction Javadoc
+* Ajout de package-info.java
