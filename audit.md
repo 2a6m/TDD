@@ -68,6 +68,10 @@ Vu le fait que nous avons ajouté de nouveaux tests, le cycle itératif n'a pas 
 No module to measure the comments => sloccount
 Goal : 30% => only ~15% reached
 
+### Duplication
+
+A lot of duplication in the interface part due to the automatic generation of forms
+
 ## Git Log
 
 relevant commits
