@@ -3,6 +3,8 @@ package backend;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class DifficultyTest {
     private Difficulty difficulty;
 
@@ -22,7 +24,7 @@ public class DifficultyTest {
     @Test
     public void SetNameException() {
         int name = -1;
-        boolean thrown = false;
+        boolean thrown =false;
 
         try {
             difficulty.SetName(name);
@@ -30,6 +32,6 @@ public class DifficultyTest {
             thrown = true;
         }
 
-        assertTrue("No Exception raised", thrown);
+        assert(thrown);
     }
 }
