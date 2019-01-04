@@ -1,6 +1,7 @@
 package backend;
 
 import java.util.*;
+import java.lang.Exception;
 /** Class Difficulty.
  *
  * Class to represent the difficulty of the game.
@@ -67,8 +68,11 @@ public class Difficulty {
     public void RetryCoins(Player player) {
         int currentCoins = player.GetCoins();
         int newCoins = currentCoins - levelCoin;
-        player.SetCoins(newCoins);
-
+        if (newCoins > 0) {
+            throw new Exception("Not enough coins");
+        } else {
+            player.SetCoins(newCoins);
+        }
     }
 
     /** Adds coins of a player.
