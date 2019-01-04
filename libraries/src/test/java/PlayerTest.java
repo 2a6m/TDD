@@ -16,24 +16,11 @@ public class PlayerTest {
         player = new Player("test");
     }
 
-    // test type of difficulty not in the Map coinConfigurator
-    @Test
-    public void SetDIfficultyNameException() {
-        boolean thrown = false;
-
-        try {
-            testDifficulty = new Difficulty("test");
-        } catch (Exception e) {
-            thrown = true;
-        }
-
-        assertTrue("Exception not raised", thrown);
-    }
-
+    // test coins below zero
     @Test
     public void MoneyBelowZero() {
         int coin = -1;
-        player.setCoins(coin);
+        player.SetCoins(coin);
 
         assertEquals(0, player.GetCoins());
     }
