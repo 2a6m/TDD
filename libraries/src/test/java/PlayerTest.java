@@ -29,7 +29,7 @@ public class PlayerTest {
     @Test
     public void CoinsGame() {
         int start = 0;
-        int end = start - difficulty.coinConfigurator.get("easy");
+        int end = start - 10;
 
         player.SetCoins(start);
         boolean thrown = false;
