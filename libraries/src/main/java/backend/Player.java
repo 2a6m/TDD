@@ -61,5 +61,8 @@ public class Player {
     */
     public void SetCoins(int coins) {
         this.coins = coins;
+        if (this.coins < 0) {
+            this.coins = 0;
+        }
     }
 }
