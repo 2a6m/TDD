@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 public class DifficultyTest {
     private Difficulty difficulty;
+    Difficulty testDifficulty;
 
     @Before
     public void setUp() {
@@ -23,9 +24,8 @@ public class DifficultyTest {
     */
 
     // test type of difficulty not in the Map coinConfigurator
-    @test
+    @Test
     public void SetDIfficultyNameException() {
-        Difficulty testDIfficulty;
         boolean thrown = false;
 
         try {
