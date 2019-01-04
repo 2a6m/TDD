@@ -7,7 +7,7 @@ public class DifficultyTest {
     private Difficulty difficulty;
 
     @Rule
-    public ExpectedException thrown = ExpectedException.none();
+    public Exception thrown = Exception.none();
 
     @Before
     public void setUp() {
