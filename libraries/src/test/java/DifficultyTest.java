@@ -24,14 +24,14 @@ public class DifficultyTest {
     @Test
     public void SetNameException() {
         int name = -1;
+        boolean thrown = false;
 
         try {
             difficulty.SetName(name);
-            boolean thrown = false;
         } catch(Exception e) {
-            boolean thrown = true;
+            thrown = true;
         }
 
-        assert(thrown);
+        assertTrue(thrown);
     }
 }
