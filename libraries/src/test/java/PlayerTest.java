@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class DifficultyTest {
+public class PlayerTest {
     private Difficulty difficulty;
     private Difficulty testDifficulty;
     private Player player;
@@ -30,22 +30,11 @@ public class DifficultyTest {
         assertTrue("Exception not raised", thrown);
     }
 
-    // ERROR
-    /*
-    // test input with different type from wanted
     @Test
-    public void SetNameException() {
-        int name = -1;
-        boolean thrown = false;
+    public void MoneyBelowZero() {
+        int coin = -1;
+        player.setCoins(coin);
 
-        try {
-            // error but don't throw exception ?
-            difficulty.SetName(name);
-        } catch (Exception e) {
-            thrown = true;
-        }
-
-        assertTrue("Exception not raised", thrown);
+        assertTru(0, player.GetCoins())
     }
-    */
 }
