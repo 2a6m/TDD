@@ -13,21 +13,21 @@ public class DifficultyTest {
 
     @Test(expected = Exception.class)
     public void SetNameException() {
-        Int name = -1;
+        int name = -1;
 
         difficulty.SetName(name);
     }
 
     @Test(expected = Exception.class)
     public void SetNameException() {
-        Int name = 0;
+        int name = 0;
 
         difficulty.SetName(name);
     }
 
     @Test(expected = Exception.class)
     public void SetNameException() {
-        Int name = 10;
+        int name = 10;
 
         difficulty.SetName(name);
     }
