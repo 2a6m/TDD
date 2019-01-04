@@ -32,6 +32,7 @@ public class PlayerTest {
         int end = start - 10;
 
         player.SetCoins(start);
+        difficulty = new Difficulty("easy");
         boolean thrown = false;
 
         try {
