@@ -35,6 +35,6 @@ public class PlayerTest {
         int coin = -1;
         player.setCoins(coin);
 
-        assertTru(0, player.GetCoins())
+        assertEquals(0, player.GetCoins());
     }
 }
