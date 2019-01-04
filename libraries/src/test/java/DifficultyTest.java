@@ -22,7 +22,7 @@ public class DifficultyTest {
     @Test
     public void SetNameException() {
         int name = -1;
-        Bool thrown = false;
+        boolean thrown = false;
 
         try {
             difficulty.SetName(name);
