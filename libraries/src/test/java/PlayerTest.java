@@ -24,4 +24,22 @@ public class PlayerTest {
 
         assertEquals(0, player.GetCoins());
     }
+
+    // raise exception when not enough money
+    @Test
+    public void CoinsGame() {
+        int start = 0;
+        int end = start - difficulty.coinConfigurator.get("easy");
+
+        player.SetCoins(start);
+        boolean thrown = false;
+
+        try {
+            Difficulty.RetryCoins(player);
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertTrue(thrown);
+    }
 }
