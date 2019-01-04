@@ -25,11 +25,10 @@ public class DifficultyTest {
     // test type of difficulty not in the Map coinConfigurator
     @test
     public void SetDIfficultyNameException() {
-        private Difficulty testDifficulty;
         boolean thrown = false;
 
         try {
-            testDifficulty = new Difficulty("test");
+            private Difficulty testDifficulty = new Difficulty("test");
         } catch (Exception e) {
             thrown = true;
         }
