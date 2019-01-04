@@ -68,7 +68,7 @@ public class Difficulty {
     public void RetryCoins(Player player) {
         int currentCoins = player.GetCoins();
         int newCoins = currentCoins - levelCoin;
-        if (newCoins > 0) {
+        if (newCoins < 0) {
             throw new ArithmeticException("Not enough coins");
         } else {
             player.SetCoins(newCoins);
