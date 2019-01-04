@@ -35,7 +35,7 @@ public class PlayerTest {
         boolean thrown = false;
 
         try {
-            Difficulty.RetryCoins(player);
+            difficulty.RetryCoins(player);
         } catch (Exception e) {
             thrown = true;
         }
