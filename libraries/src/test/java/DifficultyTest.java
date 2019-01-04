@@ -17,18 +17,4 @@ public class DifficultyTest {
 
         difficulty.SetName(name);
     }
-
-    @Test(expected = Exception.class)
-    public void SetNameException() {
-        int name = 0;
-
-        difficulty.SetName(name);
-    }
-
-    @Test(expected = Exception.class)
-    public void SetNameException() {
-        int name = 10;
-
-        difficulty.SetName(name);
-    }
 }
