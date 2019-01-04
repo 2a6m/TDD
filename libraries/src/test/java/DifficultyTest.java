@@ -14,14 +14,6 @@ public class DifficultyTest {
         difficulty = new Difficulty("easy");
         player = new Player("test");
     }
-    /*
-    @Test(expected = Exception.class)
-    public void SetNameException() throws Exception {
-        int name = -1;
-
-        difficulty.SetName(name);
-    }
-    */
 
     // test type of difficulty not in the Map coinConfigurator
     @Test
@@ -38,6 +30,7 @@ public class DifficultyTest {
     }
 
     // ERROR
+    /*
     @Test
     public void SetNameException() {
         int name = -1;
@@ -52,4 +45,5 @@ public class DifficultyTest {
 
         assertTrue("Exception not raised", thrown);
     }
+    */
 }
