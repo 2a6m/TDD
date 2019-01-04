@@ -28,10 +28,10 @@ public class DifficultyTest {
 
         try {
             difficulty.SetName(name);
-        } catch(Exception e) {
+        } catch (Exception e) {
             thrown = true;
         }
 
-        assertTrue(thrown);
+        assertTrue("Exception not catched", thrown);
     }
 }
