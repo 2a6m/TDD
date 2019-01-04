@@ -28,7 +28,7 @@ public class DifficultyTest {
         try {
             difficulty.SetName(name);
             boolean thrown = false;
-        } catch() {
+        } catch(Exception e) {
             boolean thrown = true;
         }
 
