@@ -7,7 +7,8 @@ import static org.junit.Assert.*;
 
 public class DifficultyTest {
     private Difficulty difficulty;
-    Difficulty testDifficulty;
+    private Difficulty testDifficulty;
+    private Player player;
 
     @Before
     public void setUp() {
