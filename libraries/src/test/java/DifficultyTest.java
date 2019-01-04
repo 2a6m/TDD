@@ -30,6 +30,25 @@ public class DifficultyTest {
         assertTrue("Exception not raised", thrown);
     }
 
+    // raise exception when not enough money
+    @Test
+    public void CoinsGame() {
+        int start = 0;
+        int end = start - 10;
+
+        player.SetCoins(start);
+        difficulty = new Difficulty("easy");
+        boolean thrown = false;
+
+        try {
+            difficulty.RetryCoins(player);
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertTrue(thrown);
+    }
+
     // ERROR
     /*
     // test input with different type from wanted
