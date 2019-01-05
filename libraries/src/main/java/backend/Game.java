@@ -176,6 +176,8 @@ public class Game {
             } catch (Exception e) {
                 return objectNull;               //invalid pseudo
             }
+        } else {
+            return objectNull;
         }
     }
 
