@@ -124,23 +124,27 @@ public class Game {
     public void Login(String pseudo, String password) {
         JSONObject playerData = CheckLogin(pseudo,password);
 
-        if (playerData.length() != 0) {
-            Player player = new Player(pseudo);
-            this.player = player;
+        if (playerData != null) {
+            if (playerData.length() != 0) {
+                Player player = new Player(pseudo);
+                this.player = player;
 
-            try {
-                int playerCoins = (int) playerData.get("coins");
-                player.SetCoins(playerCoins);
+                try {
+                    int playerCoins = (int) playerData.get("coins");
+                    player.SetCoins(playerCoins);
 
-                System.out.print("Connection réussie");
+                    System.out.print("Connection réussie");
 
-            } catch (Exception e) {
+                } catch (Exception e) {
+                    System.out.print("Connection échouée");
+
+                }
+            } else {
                 System.out.print("Connection échouée");
-
+                throw new ArithmeticException("No input, pseudo not valable");
             }
         } else {
-            System.out.print("Connection échouée");
-            throw new ArithmeticException("No input, pseudo not valable");
+            throw new ArithmeticException("player data is null");
         }
     }
 

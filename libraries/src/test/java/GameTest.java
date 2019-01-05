@@ -28,7 +28,7 @@ public class GameTest {
             thrown = true;
         }
 
-        assertTrue("Exception not raised", thrown);
+        assertTrue("Exception not raised login empty", thrown);
     }
 
     // test save
@@ -56,7 +56,7 @@ public class GameTest {
             thrown = true;
         }
 
-        assertTrue("Exception not raised", thrown);
+        assertTrue("Exception not raised check login null", thrown);
     }
 
     // test empty imputand in db
@@ -70,7 +70,7 @@ public class GameTest {
             thrown = true;
         }
 
-        assertTrue("Exception not raised", thrown);
+        assertTrue("Exception not raised login all empty", thrown);
     }
 
 }
