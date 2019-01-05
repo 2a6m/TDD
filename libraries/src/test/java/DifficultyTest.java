@@ -52,7 +52,7 @@ public class DifficultyTest {
     @Test
     public void CoinsGameGet() {
         int start = 0;
-        int end = start + 10:
+        int end = start + 10;
 
         player.SetCoins(start);
         difficulty = new Difficulty("easy");
