@@ -40,7 +40,7 @@ public class DifficultyTest {
             thrown = true;
         }
 
-        assertEquals("test", testDifficulty.getName());
+        assertEquals("test", testDifficulty.GetName());
         assertTrue("Exception not raised", thrown);
     }
 
