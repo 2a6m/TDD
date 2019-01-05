@@ -123,6 +123,7 @@ public class Game {
      */
     public void Login(String pseudo, String password) {
         JSONObject playerData = CheckLogin(pseudo,password);
+        System.out.print(playerData);
 
         if (playerData != null) {
             if (playerData.length() != 0) {
