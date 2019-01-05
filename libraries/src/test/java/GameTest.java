@@ -38,7 +38,7 @@ public class GameTest {
 
         try {
             game.Save();
-        } catch (Exception as e) {
+        } catch (Exception e) {
             thrown = false;
         }
 
