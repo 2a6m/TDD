@@ -18,7 +18,7 @@ public class DifficultyTest {
 
     // test type of difficulty not in the Map coinConfigurator
     @Test
-    public void SetDIfficultyNameException() {
+    public void SetDifficultyNameException() {
         boolean thrown = false;
 
         try {
@@ -27,6 +27,20 @@ public class DifficultyTest {
             thrown = true;
         }
 
+        assertTrue("Exception not raised", thrown);
+    }
+
+    @Test
+    public void SetDifficultyNameException_v2() {
+        boolean thrown = false;
+
+        try {
+            testDifficulty = new Difficulty("test");
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertEquals("test", testDifficulty.getName());
         assertTrue("Exception not raised", thrown);
     }
 
@@ -49,6 +63,7 @@ public class DifficultyTest {
         assertTrue(thrown);
     }
 
+    // test add coins is correct
     @Test
     public void CoinsGameGet() {
         int start = 0;
