@@ -58,7 +58,8 @@ public class Difficulty {
      *
      * @param  name      the new name of the difficulty.
      */
-    public void SetName(String name) { this.name = name; }
+    // Remove this method, it's dangerous.
+    //public void SetName(String name) { this.name = name; }
 
     /** Removes coins of a player.
      *
