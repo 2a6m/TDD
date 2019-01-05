@@ -160,22 +160,23 @@ public class Game {
     private JSONObject CheckLogin(String pseudo, String password) {
         JSONObject objectNull = new JSONObject();
 
-        try {
-            JSONObject db = Utils.ReadDatabase(Utils.url + "/../libraries/src/main/resources/playerDatabase.json");
+        if (pseudo.length() != 0 || password.length() != 0) {
+            try {
+                JSONObject db = Utils.ReadDatabase(Utils.url + "/../libraries/src/main/resources/playerDatabase.json");
 
-            JSONObject playerData = db.getJSONObject(pseudo);
-            String pass = (String) playerData.get("password");
+                JSONObject playerData = db.getJSONObject(pseudo);
+                String pass = (String) playerData.get("password");
 
-            if (pass.equals(password)) {
-                return playerData;
-            } else {
-                return objectNull;           //invalid password
+                if (pass.equals(password)) {
+                    return playerData;
+                } else {
+                    return objectNull;           //invalid password
+                }
+
+            } catch (Exception e) {
+                return objectNull;               //invalid pseudo
             }
-
-        } catch (Exception e) {
-            return objectNull;               //invalid pseudo
         }
-
     }
 
 
