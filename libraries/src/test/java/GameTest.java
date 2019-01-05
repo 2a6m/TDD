@@ -45,10 +45,17 @@ public class GameTest {
         assertTrue(thrown);
     }
 
-    // test CheckLogin
+    // test Login player not in db
     public void CheckLoginNull() {
+        boolean thrown = false;
 
-        assertNull(game.CheckLogin("Alberto","Alvarez"));
+        try {
+            game.Login("Alberto", "Alvarez");
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertTrue("Exception not raised", thrown);
     }
 
 }
