@@ -84,7 +84,7 @@ public class GameTest {
             thrown = true;
         }
 
-        assertTrue("Exception not raised login all empty", thrown);
+        assertTrue("Exception not raised minus coins", thrown);
     }
 
 
