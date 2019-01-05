@@ -128,11 +128,9 @@ public class Game {
             if (playerData.length() != 0) {
                 Player player = new Player(pseudo);
                 this.player = player;
-                System.out.println(player);
 
                 try {
                     int playerCoins = (int) playerData.get("coins");
-                    System.out.println(playerCoins);
                     if (playerCoins > 0) {
                         player.SetCoins(playerCoins);
 
