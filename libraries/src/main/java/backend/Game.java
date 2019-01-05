@@ -141,7 +141,7 @@ public class Game {
                 } catch (Exception e) {
                     System.out.print("set player failed");
 
-                }²
+                }
             } else {
                 System.out.print("Connection échouée");
                 throw new ArithmeticException("No input, pseudo not valable");
