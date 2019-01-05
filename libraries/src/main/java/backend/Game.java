@@ -131,6 +131,7 @@ public class Game {
 
                 try {
                     int playerCoins = (int) playerData.get("coins");
+                    System.out.println(playerCoins);
                     if (playerCoins > 0) {
                         player.SetCoins(playerCoins);
 
