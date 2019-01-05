@@ -31,4 +31,24 @@ public class GameTest {
         assertTrue("Exception not raised", thrown);
     }
 
+    // test save
+    @Test
+    public void Savetest() {
+        boolean thrown = true;
+
+        try {
+            game.Save();
+        } catch (Exception as e) {
+            thrown = false;
+        }
+
+        assertTrue(thrown);
+    }
+
+    // test CheckLogin
+    public void CheckLoginNull() {
+
+        assertNull(game.CheckLogin("Alberto","Alvarez"));
+    }
+
 }
