@@ -75,7 +75,7 @@ public class GameTest {
 
     // test db with minus coins
     @Test
-    public void LoginAllEmpty(){
+    public void MinusCoinsDB(){
         boolean thrown = false;
 
         try {
