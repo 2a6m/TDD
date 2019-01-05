@@ -32,7 +32,7 @@ public class DifficultyTest {
 
     // raise exception when not enough money
     @Test
-    public void CoinsGame() {
+    public void CoinsGameException() {
         int start = 0;
         int end = start - 10;
 
@@ -47,6 +47,19 @@ public class DifficultyTest {
         }
 
         assertTrue(thrown);
+    }
+
+    @Test
+    public void CoinsGameGet() {
+        int start = 0;
+        int end = start + 10:
+
+        player.SetCoins(start);
+        difficulty = new Difficulty("easy");
+
+        difficulty.AddCoins(player);
+
+        assertEquals(end, player.GetCoins());
     }
 
     // ERROR
