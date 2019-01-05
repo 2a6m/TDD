@@ -68,7 +68,7 @@ public class Difficulty {
         int currentCoins = player.GetCoins();
         int newCoins = currentCoins - levelCoin;
         if (newCoins < 0) {
-            throw new java.lang.Exception("Not enough coins.");
+            throw new java.lang.ArithmeticException("Not enough coins.");
         } else {
             player.SetCoins(newCoins);
         }
