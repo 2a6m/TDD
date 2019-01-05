@@ -24,4 +24,18 @@ public class PlayerTest {
 
         assertEquals(0, player.GetCoins());
     }
+
+    // test pseudo empty
+    @Test
+    public void PseudoEmpty() {
+        boolean thrown = false;
+
+        try {
+            player.SetPseudo("");
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertTrue("Exception not raised", thrown);
+    }
 }
