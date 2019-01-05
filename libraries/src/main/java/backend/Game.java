@@ -140,6 +140,7 @@ public class Game {
             }
         } else {
             System.out.print("Connection échouée");
+            throw new ArithmeticException("No input, pseudo not valable");
         }
     }
 
