@@ -128,20 +128,20 @@ public class Game {
             if (playerData.length() != 0) {
                 Player player = new Player(pseudo);
                 this.player = player;
-                System.out.println(player);
 
                 try {
                     int playerCoins = (int) playerData.get("coins");
-                    System.out.println(playerCoins);
-                    player.SetCoins(playerCoins);
-                    System.out.println(player.GetCoins());
+                    if (playerCoins > 0) {
+                        player.SetCoins(playerCoins);
 
-                    System.out.print("Connection réussie");
-
+                        System.out.print("Connection réussie");
+                    } else {
+                        throw new ArithmeticException("Coins cannot be below 0 in db");
+                    }
                 } catch (Exception e) {
                     System.out.print("set player failed");
 
-                }
+                }²
             } else {
                 System.out.print("Connection échouée");
                 throw new ArithmeticException("No input, pseudo not valable");
