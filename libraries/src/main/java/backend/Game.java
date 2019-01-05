@@ -134,6 +134,7 @@ public class Game {
                     int playerCoins = (int) playerData.get("coins");
                     System.out.println(playerCoins);
                     player.SetCoins(playerCoins);
+                    System.out.println(player.getCoins());
 
                     System.out.print("Connection réussie");
 
