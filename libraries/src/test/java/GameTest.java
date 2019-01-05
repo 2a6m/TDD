@@ -30,7 +30,7 @@ public class GameTest {
 
         assertTrue("Exception not raised login empty", thrown);
     }
-    /*
+
     // test save
     @Test
     public void Savetest() {
@@ -44,7 +44,7 @@ public class GameTest {
 
         assertTrue(thrown);
     }
-    */
+
     // test Login player not in db
     @Test
     public void CheckLoginNull() {
@@ -72,5 +72,20 @@ public class GameTest {
 
         assertTrue("Exception not raised login all empty", thrown);
     }
+
+    // test db with minus coins
+    @Test
+    public void LoginAllEmpty(){
+        boolean thrown = false;
+
+        try {
+            game.Login("test-minus", "test");
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertTrue("Exception not raised login all empty", thrown);
+    }
+
 
 }
