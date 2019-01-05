@@ -128,6 +128,7 @@ public class Game {
             if (playerData.length() != 0) {
                 Player player = new Player(pseudo);
                 this.player = player;
+                System.out.println(player);
 
                 try {
                     int playerCoins = (int) playerData.get("coins");
@@ -141,7 +142,7 @@ public class Game {
                     }
                 } catch (Exception e) {
                     System.out.print("set player failed");
-
+                    throw new ArithmeticException("Coins cannot be below 0 in db");
                 }
             } else {
                 System.out.print("Connection échouée");
