@@ -30,20 +30,6 @@ public class DifficultyTest {
         assertTrue("Exception not raised", thrown);
     }
 
-    @Test
-    public void SetDifficultyNameException_v2() {
-        boolean thrown = false;
-
-        try {
-            testDifficulty = new Difficulty("test");
-        } catch (Exception e) {
-            thrown = true;
-        }
-
-        assertEquals("test", testDifficulty.GetName());
-        assertTrue("Exception not raised", thrown);
-    }
-
     // raise exception when not enough money
     @Test
     public void CoinsGameException() {
