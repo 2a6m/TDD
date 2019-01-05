@@ -1,7 +1,7 @@
 package backend;
 
 import java.util.*;
-import java.lang.*;
+import java.lang.Exceptions;
 /** Class Difficulty.
  *
  * Class to represent the difficulty of the game.
