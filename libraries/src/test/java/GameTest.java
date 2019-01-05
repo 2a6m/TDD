@@ -46,11 +46,26 @@ public class GameTest {
     }
 
     // test Login player not in db
+    @Test
     public void CheckLoginNull() {
         boolean thrown = false;
 
         try {
             game.Login("Alberto", "Alvarez");
+        } catch (Exception e) {
+            thrown = true;
+        }
+
+        assertTrue("Exception not raised", thrown);
+    }
+
+    // test empty imputand in db
+    @Test
+    public void LoginAllEmpty(){
+        boolean thrown = false;
+
+        try {
+            game.Login("", "");
         } catch (Exception e) {
             thrown = true;
         }
