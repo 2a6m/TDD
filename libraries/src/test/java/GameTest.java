@@ -30,7 +30,7 @@ public class GameTest {
 
         assertTrue("Exception not raised login empty", thrown);
     }
-
+    /*
     // test save
     @Test
     public void Savetest() {
@@ -44,7 +44,7 @@ public class GameTest {
 
         assertTrue(thrown);
     }
-
+    */
     // test Login player not in db
     @Test
     public void CheckLoginNull() {
