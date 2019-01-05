@@ -42,7 +42,12 @@ public class Player {
     * @param pseudo new pseudo for the player
     */
     public void SetPseudo(String pseudo) {
-        this.pseudo = pseudo;
+        if (pseudo.length == 0) {
+            throw new ArithmeticException("No input, pseudo not valable");
+        } else {
+            this.pseudo = pseudo;
+        }
+
     }
 
     /**
