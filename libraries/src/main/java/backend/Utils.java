@@ -34,7 +34,6 @@ public class Utils {
             return new JSONObject(content);
         } catch (Exception e) {
             System.out.print(e);
-            throw e;
         }
 
         return new JSONObject();
