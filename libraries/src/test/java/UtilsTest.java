@@ -29,7 +29,7 @@ public class UtilsTest {
         boolean thrown = true;
 
         try {
-            Utils.MixArrayEmpty(array);
+            Utils.MixArray(array);
         } catch (Exception e) {
             thrown = false;
         }
