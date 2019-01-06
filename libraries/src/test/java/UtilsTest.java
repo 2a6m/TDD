@@ -40,7 +40,7 @@ public class GameTest {
     // test check Coins
     @Test
     public void CheckCoinsTest() {
-        assertFalse(CheckCoins(low, difficulty))
-        assertTrue(CheckCoins(full, difficulty))
+        assertFalse(CheckCoins(low, difficulty));
+        assertTrue(CheckCoins(full, difficulty));
     }
 }
