@@ -29,7 +29,7 @@ public class UtilsTest {
         boolean thrown = true;
 
         try {
-            MixArrayEmpty(array);
+            Utils.MixArrayEmpty(array);
         } catch (Exception e) {
             thrown = false;
         }
@@ -40,7 +40,7 @@ public class UtilsTest {
     // test check Coins
     @Test
     public void CheckCoinsTest() {
-        assertFalse(CheckCoins(low, difficulty));
-        assertTrue(CheckCoins(full, difficulty));
+        assertFalse(Utils.CheckCoins(low, difficulty));
+        assertTrue(Utils.CheckCoins(full, difficulty));
     }
 }
