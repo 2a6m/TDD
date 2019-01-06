@@ -47,7 +47,7 @@ public class UtilsTest {
 
     @Test
     public void readDatabaseTest() {
-        assertTrue(Utils.ReadDatabase("") instanceof JSONObject)
-        assertTrue(Utils.ReadDatabase("../../main/resources/playerDatabase.json))
+        assertTrue(Utils.ReadDatabase("") instanceof JSONObject);
+        assertTrue(Utils.ReadDatabase("../../main/resources/playerDatabase.json") instanceof JSONObject);
     }
 }
