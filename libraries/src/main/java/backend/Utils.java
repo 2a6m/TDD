@@ -34,7 +34,7 @@ public class Utils {
             return new JSONObject(content);
         } catch (Exception e) {
             System.out.print(e);
-            throw new ArithmeticException("Error to read DB");
+            throw e;
         }
 
         return new JSONObject();
