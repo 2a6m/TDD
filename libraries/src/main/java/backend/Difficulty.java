@@ -54,7 +54,7 @@ public class Difficulty {
      */
     public int GetLevelCoin() { return this.levelCoin; }
 
-    /** Changes the name of the difficulty.
+    /* Changes the name of the difficulty.
      *
      * @param  name      the new name of the difficulty.
      */

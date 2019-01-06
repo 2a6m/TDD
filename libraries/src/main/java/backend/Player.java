@@ -24,7 +24,11 @@ public class Player {
     * @param pseudo peudo of the player.
     */
     public Player(String pseudo) {
-        this.pseudo = pseudo;
+        if (pseudo.length() == 0) {
+            throw new ArithmeticException("No input, pseudo not valable");
+        } else {
+            this.pseudo = pseudo;
+        }
     }
 
     /**
@@ -36,11 +40,13 @@ public class Player {
         return pseudo;
     }
 
-    /**
+    /*
     * Setter : pseudo of the player.
     *
     * @param pseudo new pseudo for the player
     */
+    // Remove this method, it's dangerous.
+    /*
     public void SetPseudo(String pseudo) {
         if (pseudo.length() == 0) {
             throw new ArithmeticException("No input, pseudo not valable");
@@ -49,6 +55,7 @@ public class Player {
         }
 
     }
+    */
 
     /**
     * Getter : amount of coins of the player.

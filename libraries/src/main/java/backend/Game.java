@@ -18,11 +18,12 @@ public class Game {
      */
     private Player player;
 
-    /** difficulty.
+    /* difficulty.
      *
      * @param difficulty object of type Difficulty representing the difficulty of the game.
      */
-    private Difficulty difficulty;
+    // Remove this method, it's dangerous.
+    //private Difficulty difficulty;
 
     /** typeMystery represent the type of game.
      *
