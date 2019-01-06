@@ -18,12 +18,11 @@ public class Game {
      */
     private Player player;
 
-    /* difficulty.
+    /** difficulty.
      *
      * @param difficulty object of type Difficulty representing the difficulty of the game.
      */
-    // Remove this method, it's dangerous.
-    //private Difficulty difficulty;
+    private Difficulty difficulty;
 
     /** typeMystery represent the type of game.
      *
@@ -81,11 +80,12 @@ public class Game {
      */
     public void SetTypeMystery(TypeMystery typeMystery) { this.typeMystery = typeMystery; }
 
-    /** Modifies the Difficulty of the game.
+    /* Modifies the Difficulty of the game.
      *
      * @param  difficulty      the new difficulty that the user has chosen.
      */
-    public void SetDifficulty(Difficulty difficulty) { this.difficulty = difficulty; }
+    // Remove this method, it's dangerous.
+    //public void SetDifficulty(Difficulty difficulty) { this.difficulty = difficulty; }
 
     /** Gives the Difficulty of the game.
      *
