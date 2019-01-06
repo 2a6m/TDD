@@ -31,7 +31,7 @@ public class PlayerTest {
         boolean thrown = false;
 
         try {
-            player.SetPseudo("");
+            player = new Player("");
         } catch (Exception e) {
             thrown = true;
         }
