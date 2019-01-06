@@ -1,5 +1,6 @@
 package backend;
 
+import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 import java.util.ArrayList;
@@ -42,5 +43,11 @@ public class UtilsTest {
     public void CheckCoinsTest() {
         assertFalse(Utils.CheckCoins(low, difficulty));
         assertTrue(Utils.CheckCoins(full, difficulty));
+    }
+
+    @Test
+    public void readDatabaseTest() {
+        assertTrue(Utils.ReadDatabase("") instanceof JSONObject)
+        assertTrue(Utils.ReadDatabase("../../main/resources/playerDatabase.json))
     }
 }
