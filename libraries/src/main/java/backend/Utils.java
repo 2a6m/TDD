@@ -32,7 +32,10 @@ public class Utils {
             String content = FileUtils.readFileToString(file, "utf-8");
 
             return new JSONObject(content);
-        } catch (Exception e) { System.out.print(e); }
+        } catch (Exception e) {
+            System.out.print(e);
+            throw new throw new IOException();
+        }
 
         return new JSONObject();
     }
