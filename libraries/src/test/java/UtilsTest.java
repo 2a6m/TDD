@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class Utilstest {
+public class UtilsTest {
     Player low;
     Player full;
     Difficulty difficulty;
@@ -26,7 +26,7 @@ public class Utilstest {
     // test array empty
     @Test
     public void MixArrayEmpty() {
-        thrown = true;
+        boolean thrown = true;
 
         try {
             MixArrayEmpty(array);
